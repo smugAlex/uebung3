@@ -52,6 +52,10 @@ public class OurStack {
 
   public void pop() {
     // TODO
+    if(stack.length>1){
+      stack[currentSize-1] = null;
+      currentSize-=1;
+    }else SimpleIO.output("Es gibt nicht genug Elemente in dem Stack!");
   }
 
   public void clear() {
